@@ -16,9 +16,27 @@ def hello():
 @app.route("/rota")
 def hello2():
     return '''
+    <style>
+        #tela {
+            font-family: Arial,Calibri,Helvetica;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            justify-content: center;
+
+            background-color: rgb(196, 196, 196);
+            margin-top: 10%;
+            padding: -500px;
+            padding-right: -500px;
+            border-radius: 15px;
+        }
+    </style>
     <body>
-        <h1>Rota atualmente indisponível</h1>
-        <p>A página que você procura não existe ou pode ter sido movida.</p>
-        <p>Para mais informações contate o administrador do site.</p>
+        <div id="tela">
+            <h1>Rota atualmente indisponível</h1>
+            <p>A página que você procura não existe ou pode ter sido movida.</p>
+            <p>Para mais informações contate o administrador do site.</p>
+        </div>
     </body>
     '''
