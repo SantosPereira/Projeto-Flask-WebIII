@@ -17,9 +17,13 @@ def hello():
 def trynow():
     return render_template('trynow/index.html')
 
+@app.route("/download")
+def download():
+    return render_template('download/index.html')
 
-
-
+@app.route("/faq")
+def faq():
+    return render_template("faq/index.html")
 
 
 
