@@ -17,19 +17,11 @@ def hello():
 def hello2():
     return '''
     <style>
+        body {
+            display: flex;align-items: center;justify-content: center;
+        }
         #tela {
-            font-family: Arial,Calibri,Helvetica;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-
-            justify-content: center;
-
-            background-color: rgb(196, 196, 196);
-            margin-top: 10%;
-            padding: -500px;
-            padding-right: -500px;
-            border-radius: 15px;
+            width: 600px;font-family: Arial,Calibri,Helvetica;display: flex;flex-direction: column;flex-wrap: wrap;justify-content: center;align-items: center;background-color: rgb(196, 196, 196);border-radius: 15px;
         }
     </style>
     <body>
