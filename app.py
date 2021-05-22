@@ -13,6 +13,15 @@ app = Flask(__name__)
 def hello():
     return render_template('index.html')
 
+
+
+
+
+
+
+
+
+
 @app.route("/rota")
 def hello2():
     return '''
@@ -21,7 +30,7 @@ def hello2():
             display: flex;align-items: center;justify-content: center;
         }
         #tela {
-            width: 600px;font-family: Arial,Calibri,Helvetica;display: flex;flex-direction: column;flex-wrap: wrap;justify-content: center;align-items: center;background-color: rgb(196, 196, 196);border-radius: 15px;
+            margin-top: 10%;width: 600px;font-family: Arial,Calibri,Helvetica;display: flex;flex-direction: column;flex-wrap: wrap;justify-content: center;align-items: center;background-color: rgb(196, 196, 196);border-radius: 15px;
         }
     </style>
     <body>
