@@ -13,8 +13,9 @@ app = Flask(__name__)
 def hello():
     return render_template('index.html')
 
-
-
+@app.route("/trynow")
+def trynow():
+    return render_template('trynow/index.html')
 
 
 
