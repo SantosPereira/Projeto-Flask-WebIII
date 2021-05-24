@@ -25,9 +25,9 @@ a:hover {
 
 body {
     font-family: 'Roboto';
-    /* background-color: #2F80ED; */
+    background-color: #2F80ED;
     /* background: url("../media/Hipotamus.png") no-repeat; */
-    background: url("../media/homepage.png") no-repeat;
+    /* background: url("../media/homepage.png") no-repeat; */
     background-size: 100%;
 }
 
@@ -36,6 +36,14 @@ body {
     height: 1200px;
 }
 
+#hipopotamo {
+    z-index: 100;
+    background: url("../media/idea2.png") no-repeat;
+    background-size: 100%;
+    margin-left: 10px;
+    width: 300px;
+    height: 500px;
+}
 
 header {
     margin-top: -40px;
@@ -64,8 +72,11 @@ header a {
 
 
 section {
-    margin-top: 100px;
-    margin-left: 30%;
+    /* GUAMBIARRA */
+    margin-top: -400px;
+    /* f */
+    /* margin-top: 100px; */
+    margin-left: 32%;
     padding: 20px;
     background-color: #276ac2d7;
     border-radius: 10px;
