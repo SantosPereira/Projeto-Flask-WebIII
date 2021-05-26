@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início</title>
+    <title>EasyFilter</title>
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/inicio-m.css') }}" type="text/css" media="(max-width: 480px)">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/inicio.css') }}" type="text/css" media="screen">
 </head>
 <body>
     <header>
-        <h1>Teste</h1>
+        <h1>EasyFilter</h1>
+        <a href="" _target=""></a>
+        <a href="" _target=""></a>
+        <a href="" _target=""></a>
+        <a href="" _target=""></a>
     </header>
-    <section>
-
-    </section>
+    <div id="desk">
+        <form method="../app.py">
+            <input type="file" name="input" id="entrada">
+            <input type="submit" placeholder="Enviar" onmousedown="pega()">
+        </form>
+    </div>
+    <script src="{{ url_for('static',filename='js/script.js') }}"></script>
 </body>
 </html>
