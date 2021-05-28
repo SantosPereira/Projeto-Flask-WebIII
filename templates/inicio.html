@@ -23,7 +23,6 @@
         <a href="" _target=""></a>
     </header>
     <navbar>
-        <!-- <a href="/moedas/bitcoin" target="frame" onmousedown="">Bitcoin</a> -->
         <a class="moedas-menu" onmousedown="geraGrafico('bitcoin',0)">Bitcoin</a>
         <a class="moedas-menu" onmousedown="geraGrafico('ethereum',1)">Ethereum</a>
         <a class="moedas-menu" onmousedown="geraGrafico('xrp',2)">XRP</a>
@@ -39,6 +38,14 @@
     <div id="container">
         <canvas id="grafico" width="400" height="400"></canvas>
     </div>
+
+
+
+    <footer>
+        <p id="texto-footer">© 2021 Copyright LongaRitmo</p>
+        <a href="https://github.com/SantosPereira" _target="_blank" id="github"></a>
+        <a href="https://www.linkedin.com/in/pedro-henrique-dos-santos-pereira-245b12174" _target="_blank" id="linkedin"></a>
+    </footer>
     <script src="{{ url_for('static',filename='js/chart.js') }}"></script>
     <script src="{{ url_for('static',filename='js/script.js') }}"></script>
 </body>

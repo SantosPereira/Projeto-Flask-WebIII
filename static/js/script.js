@@ -53,7 +53,8 @@ var grafico = new Chart(ctx, {
                 beginAtZero: true
             }
         },
-        responsive: true
+        responsive: true,
+        maintainAspectRatio: false
     }
 });
 
@@ -125,7 +126,8 @@ function geraGrafico(moeda,n) {
                     beginAtZero: true
                 }
             },
-            responsive: true
+            responsive: true,
+            maintainAspectRatio: false
         }
     });
     conta +=1

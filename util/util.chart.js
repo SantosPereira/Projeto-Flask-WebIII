@@ -31,6 +31,8 @@ var grafico = new Chart(ctx, {
             y: {
                 beginAtZero: true
             }
-        }
+        },
+        responsive: true,
+        maintainAspectRatio: false
     }
 });
