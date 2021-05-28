@@ -1,0 +1,98 @@
+/*                                                  Cabeçalho                                                   */
+
+/* --- Importações --- */
+
+
+
+
+/* --- Limpa Formatação --- */
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: aliceblue;
+}
+a:hover {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+/* --- Variáveis do documento --- */
+
+:root {
+    --preto-dimmed: rgb(26, 26, 26);
+}
+
+
+/*                                              Fim do Cabeçalho                                                */
+
+/*                                                   Corpo                                                      */
+
+body {
+    color: aliceblue;
+    background-color: rgb(26, 26, 26);
+    font-size: medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header, navbar {
+    margin-left: 20px;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+    background-image: linear-gradient(25deg, aliceblue 20%, rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+      
+}
+
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 1125px;
+    height: 450px;
+}
+
+.moedas-menu {
+    border: solid 1px transparent;
+    border-radius: 15px;
+    
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    margin-right: 10px;
+
+    background-color: rgb(35, 35, 35);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    font-size: 0.8em;
+
+    margin-top: 100px;
+    margin-left: 30%;
+}
+#github {
+    background: url("../media/github_branco.png") no-repeat;
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    margin-left: 40%;
+}
+#linkedin {
+    background: url("../media/linkedin_branco.png") no-repeat;
+    background-size: 100%;
+    width: 25px;
+    height: 25px;
+    margin-left: 40px;
+    margin-top: 5px;
+}

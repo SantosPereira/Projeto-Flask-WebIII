@@ -77,14 +77,14 @@ footer {
     margin-top: 100px;
 }
 #github {
-    background: url("../media/github_branco.png");
+    background: url("../media/github_branco.png") no-repeat;
     background-size: 100%;
     width: 20px;
     height: 20px;
     margin-left: 40%;
 }
 #linkedin {
-    background: url("../media/linkedin_branco.png");
+    background: url("../media/linkedin_branco.png") no-repeat;
     background-size: 100%;
     width: 15px;
     height: 15px;
