@@ -8,6 +8,10 @@
     
     <link rel="stylesheet" href="{{ url_for('static',filename='css/inicio-m.css') }}" type="text/css" media="(max-width: 480px)">
     <link rel="stylesheet" href="{{ url_for('static',filename='css/inicio.css') }}" type="text/css" media="screen">
+
+    <style id="css">
+    </style>
+
 </head>
 <body>
     <header>
@@ -19,26 +23,21 @@
         <a href="" _target=""></a>
     </header>
     <navbar>
-        <p onmousedown="geraGrafico('bitcoin')">botão</p>
-        <a href="/moedas/bitcoin" target="frame" onmousedown="">Bitcoin</a>
-        <a href="/moedas/etherium" target="frame">Etherium</a>
-        <a href="/moedas/xrp" target="frame">XRP</a>
-        <a href="/moedas/litecoin" target="frame">Litecoin</a>
-        <a href="/moedas/eos" target="frame">EOS</a>
-        <a href="/moedas/cardano" target="frame">Cardano</a>
-        <a href="/moedas/binancecoin" target="frame">Binance coin</a>
-        <!-- <a href="/moedas/stellarlumens" target="frame">Stellar lumens</a>
-        <a href="/moedas/chainlink" target="frame">Chainlink</a>
-        <a href="/moedas/neo" target="frame">NEO</a>
-        <a href="/moedas/reau" target="frame">$REAU</a> -->
+        <!-- <a href="/moedas/bitcoin" target="frame" onmousedown="">Bitcoin</a> -->
+        <a class="moedas-menu" onmousedown="geraGrafico('bitcoin',0)">Bitcoin</a>
+        <a class="moedas-menu" onmousedown="geraGrafico('ethereum',1)">Ethereum</a>
+        <a class="moedas-menu" onmousedown="geraGrafico('xrp',2)">XRP</a>
+        <a class="moedas-menu" onmousedown="geraGrafico('litecoin',3)">Litecoin</a>
+        <a class="moedas-menu" onmousedown="geraGrafico('eos',4)">EOS</a>
+        <a class="moedas-menu" onmousedown="geraGrafico('cardano',5)">Cardano</a>
+        <a class="moedas-menu" onmousedown="geraGrafico('binance_coin',6)">Binance coin</a>
+        <!-- <a class="moedas-menu" onmousedown="geraGrafico('stellar_lumens',7)">Stellar lumens</a>
+        <a class="moedas-menu" onmousedown="geraGrafico('chainlink',8)">Chainlink</a>
+        <a class="moedas-menu" onmousedown="geraGrafico('neo',9)">NEO</a>
+        <a class="moedas-menu" onmousedown="geraGrafico('reau',10)">$REAU</a> -->
     </navbar>
     <div id="container">
         <canvas id="grafico" width="400" height="400"></canvas>
-        
-        
-        
-        <!-- <iframe name="frame" id="frame" src="/moedas/bitcoin">
-        </iframe> -->
     </div>
     <script src="{{ url_for('static',filename='js/chart.js') }}"></script>
     <script src="{{ url_for('static',filename='js/script.js') }}"></script>
