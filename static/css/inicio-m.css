@@ -1,0 +1,51 @@
+/*                                                  Cabeçalho                                                   */
+
+/* --- Importações --- */
+
+
+
+
+/* --- Limpa Formatação --- */
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: aliceblue;
+}
+a:hover {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+/* --- Variáveis do documento --- */
+
+:root {
+    --preto-dimmed: rgb(26, 26, 26);
+}
+
+
+/*                                              Fim do Cabeçalho                                                */
+
+/*                                                   Corpo                                                      */
+
+body {
+    color: aliceblue;
+    background-color: rgb(26, 26, 26);
+    font-size: medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+    background-image: linear-gradient(25deg, aliceblue 20%, rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+      
+}
+
+#container {
+    width: 300px;
+    height: 100px;
+}

@@ -4,25 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EasyFilter</title>
-
+    <title>Crypto Boat</title>
+    
     <link rel="stylesheet" href="{{ url_for('static',filename='css/inicio-m.css') }}" type="text/css" media="(max-width: 480px)">
     <link rel="stylesheet" href="{{ url_for('static',filename='css/inicio.css') }}" type="text/css" media="screen">
 </head>
 <body>
     <header>
-        <h1>EasyFilter</h1>
+        <h1>Crypto Boat</h1>
+        <h3></h3>
         <a href="" _target=""></a>
         <a href="" _target=""></a>
         <a href="" _target=""></a>
         <a href="" _target=""></a>
     </header>
-    <div id="desk">
-        <form method="../app.py">
-            <input type="file" name="input" id="entrada">
-            <input type="submit" placeholder="Enviar" onmousedown="pega()">
-        </form>
+    <navbar>
+        <p onmousedown="geraGrafico('bitcoin')">botão</p>
+        <a href="/moedas/bitcoin" target="frame" onmousedown="">Bitcoin</a>
+        <a href="/moedas/etherium" target="frame">Etherium</a>
+        <a href="/moedas/xrp" target="frame">XRP</a>
+        <a href="/moedas/litecoin" target="frame">Litecoin</a>
+        <a href="/moedas/eos" target="frame">EOS</a>
+        <a href="/moedas/cardano" target="frame">Cardano</a>
+        <a href="/moedas/binancecoin" target="frame">Binance coin</a>
+        <!-- <a href="/moedas/stellarlumens" target="frame">Stellar lumens</a>
+        <a href="/moedas/chainlink" target="frame">Chainlink</a>
+        <a href="/moedas/neo" target="frame">NEO</a>
+        <a href="/moedas/reau" target="frame">$REAU</a> -->
+    </navbar>
+    <div id="container">
+        <canvas id="grafico" width="400" height="400"></canvas>
+        
+        
+        
+        <!-- <iframe name="frame" id="frame" src="/moedas/bitcoin">
+        </iframe> -->
     </div>
+    <script src="{{ url_for('static',filename='js/chart.js') }}"></script>
     <script src="{{ url_for('static',filename='js/script.js') }}"></script>
 </body>
 </html>
