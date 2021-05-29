@@ -25,3 +25,11 @@ No projeto foram utilizadas as bibliotecas [flask](https://flask.palletsprojects
     $ npm install chart.js
 
 ~~~
+
+## Como rodar
+
+~~~bash
+
+    $ flask run
+
+~~~
